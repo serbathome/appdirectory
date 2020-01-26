@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Directory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/card.hover.css">
+    <script src="js/handlebars.min.js"></script>
+    <script id="card-template" type="text/x-handlebars-template">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center">
+            <div class="card rounded border-light mt-3 mb-3" >
+                <div class="card-body">
+                    <h5 class="card-title">{{name}}</h5>
+                    <p>
+                        <img class="img-fluid hoverable" src="img/{{picture}}" style="height: 50px">
+                    </p>
+                    <a href="{{url}}" class="btn btn-primary">Go {{name}}</a>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center" id="mainarea"></div>
+    </div>
+
+</body>
+
+</html>

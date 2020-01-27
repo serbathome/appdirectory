@@ -11,13 +11,18 @@
     <script src="js/handlebars.min.js"></script>
     <script id="card-template" type="text/x-handlebars-template">
         <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2 text-center">
-            <div class="card rounded border-light mt-3 mb-3" >
-                <div class="card-body">
+            <div class="card rounded border-light mt-3 mb-3">
+                <div class="card-body" style="width: 100%">
                     <h5 class="card-title text-truncate">{{name}}</h5>
                     <p>
                         <img class="img-fluid hoverable" src="img/{{picture}}" style="height: 50px">
                     </p>
-                    <a href="{{url}}" class="btn btn-primary text-truncate" target="_blank">Go {{name}}</a>
+                    <div class="btn btn-primary" style="width: 100%; overflow: hidden; text-overflow: ellipsis;"
+                    onclick="javascript:location.href='{{url}}'">
+                        <span style="white-space: nowrap;">
+                            Go {{name}}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,6 +35,7 @@
     <div class="container-fluid">
         <div class="row justify-content-md-center" id="mainarea"></div>
     </div>
+
 
 </body>
 

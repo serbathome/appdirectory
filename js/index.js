@@ -36,7 +36,7 @@ let cards = [
         url: 'http://Application5'
     },
     {
-        name: 'MyApp7',
+        name: 'Some application with a very long name',
         picture: 'sample_logo.png',
         url: 'http://Application5'
     },
